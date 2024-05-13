@@ -40,10 +40,10 @@
             this.friendlyPicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.fightPanel = new System.Windows.Forms.Panel();
-            this.attack4 = new System.Windows.Forms.Button();
-            this.attack3 = new System.Windows.Forms.Button();
-            this.attack2 = new System.Windows.Forms.Button();
             this.attack1 = new System.Windows.Forms.Button();
+            this.attack2 = new System.Windows.Forms.Button();
+            this.attack3 = new System.Windows.Forms.Button();
+            this.attack4 = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.friendlyHpLabel = new System.Windows.Forms.Label();
             this.enemyHpLabel = new System.Windows.Forms.Label();
@@ -167,33 +167,6 @@
             this.fightPanel.TabIndex = 11;
             this.fightPanel.Visible = false;
             // 
-            // attack4
-            // 
-            this.attack4.Location = new System.Drawing.Point(414, 3);
-            this.attack4.Name = "attack4";
-            this.attack4.Size = new System.Drawing.Size(130, 118);
-            this.attack4.TabIndex = 1;
-            this.attack4.Text = "Fight";
-            this.attack4.UseVisualStyleBackColor = true;
-            // 
-            // attack3
-            // 
-            this.attack3.Location = new System.Drawing.Point(278, 3);
-            this.attack3.Name = "attack3";
-            this.attack3.Size = new System.Drawing.Size(130, 118);
-            this.attack3.TabIndex = 2;
-            this.attack3.Text = "Fight";
-            this.attack3.UseVisualStyleBackColor = true;
-            // 
-            // attack2
-            // 
-            this.attack2.Location = new System.Drawing.Point(142, 3);
-            this.attack2.Name = "attack2";
-            this.attack2.Size = new System.Drawing.Size(130, 118);
-            this.attack2.TabIndex = 3;
-            this.attack2.Text = "Fight";
-            this.attack2.UseVisualStyleBackColor = true;
-            // 
             // attack1
             // 
             this.attack1.Location = new System.Drawing.Point(6, 3);
@@ -204,9 +177,36 @@
             this.attack1.UseVisualStyleBackColor = true;
             this.attack1.Click += new System.EventHandler(this.attack1_Click);
             // 
+            // attack2
+            // 
+            this.attack2.Location = new System.Drawing.Point(142, 3);
+            this.attack2.Name = "attack2";
+            this.attack2.Size = new System.Drawing.Size(130, 118);
+            this.attack2.TabIndex = 3;
+            this.attack2.Text = "Fight";
+            this.attack2.UseVisualStyleBackColor = true;
+            // 
+            // attack3
+            // 
+            this.attack3.Location = new System.Drawing.Point(278, 3);
+            this.attack3.Name = "attack3";
+            this.attack3.Size = new System.Drawing.Size(130, 118);
+            this.attack3.TabIndex = 2;
+            this.attack3.Text = "Fight";
+            this.attack3.UseVisualStyleBackColor = true;
+            // 
+            // attack4
+            // 
+            this.attack4.Location = new System.Drawing.Point(414, 3);
+            this.attack4.Name = "attack4";
+            this.attack4.Size = new System.Drawing.Size(130, 118);
+            this.attack4.TabIndex = 1;
+            this.attack4.Text = "Fight";
+            this.attack4.UseVisualStyleBackColor = true;
+            // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(406, 182);
+            this.startButton.Location = new System.Drawing.Point(397, 155);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(130, 54);
             this.startButton.TabIndex = 4;
@@ -269,7 +269,6 @@
         private System.Windows.Forms.ProgressBar enemyHp;
         private System.Windows.Forms.Label friendlyName;
         private System.Windows.Forms.Label enemyName;
-        private System.Windows.Forms.PictureBox enemyPicture;
         private System.Windows.Forms.PictureBox friendlyPicture;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel fightPanel;
@@ -280,6 +279,7 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Label friendlyHpLabel;
         private System.Windows.Forms.Label enemyHpLabel;
+        public System.Windows.Forms.PictureBox enemyPicture;
     }
 }
 

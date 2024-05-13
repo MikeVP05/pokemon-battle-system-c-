@@ -9,3 +9,13 @@ C:\Users\Mike\Desktop\School\School\ICT\C#\Pokemon\Pokemon\obj\Debug\Pokemon.csp
 C:\Users\Mike\Desktop\School\School\ICT\C#\Pokemon\Pokemon\obj\Debug\Pokemon.csproj.CoreCompileInputs.cache
 C:\Users\Mike\Desktop\School\School\ICT\C#\Pokemon\Pokemon\obj\Debug\Pokemon.exe
 C:\Users\Mike\Desktop\School\School\ICT\C#\Pokemon\Pokemon\obj\Debug\Pokemon.pdb
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\bin\Debug\Pokemon.exe.config
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\bin\Debug\Pokemon.exe
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\bin\Debug\Pokemon.pdb
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.csproj.AssemblyReference.cache
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.Form1.resources
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.csproj.GenerateResource.cache
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.exe
+C:\Users\Mike\Source\Repos\pokemon-battle-system-c-\Pokemon\obj\Debug\Pokemon.pdb

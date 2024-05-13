@@ -13,6 +13,9 @@ namespace Pokemon
 {
     public partial class Form1 : Form
     {
+        Pokemon friendly;
+        Pokemon enemy;
+
         public Form1()
         {
             InitializeComponent();
@@ -33,18 +36,20 @@ namespace Pokemon
             try
             {
                 friendlyName.Text = friendly.name;
-                enemyName.Text = enemy.name;
-
-                friendlyHp.Maximum = friendly.hp;
                 friendlyHp.Value = friendly.hp;
                 friendlyHpLabel.Text = friendly.hp.ToString() + " / " + friendlyHp.Maximum.ToString();
-                friendlyPicture.Image = Image.FromFile("../../Sprites/" + friendly.name + "Back.png");
-
-
-                enemyHp.Maximum = enemy.hp;
+                if (!friendly.fainted)
+                {
+                    friendlyPicture.Image = Image.FromFile("../../Sprites/" + friendly.name + "Back.png");
+                }
+                
+                enemyName.Text = enemy.name;
                 enemyHp.Value = enemy.hp;
                 enemyHpLabel.Text = enemy.hp.ToString() + " / " + enemyHp.Maximum.ToString();
-                enemyPicture.Image = Image.FromFile("../../Sprites/" + enemy.name + ".png");
+                if (!enemy.fainted)
+                {
+                    enemyPicture.Image = Image.FromFile("../../Sprites/" + enemy.name + ".png");
+                }
 
                 for (int i = 0; i < friendly.Attacks.Length; i++)
                 {
@@ -67,7 +72,7 @@ namespace Pokemon
                 startButton.Visible = false;
                 Attacks[] GreninjaMoves = new Attacks[] {
                     new Attacks("Dark Pulse", "Dark", true, 80, 1, "none", 0),
-                    new Attacks("Hypnosis", "Psychic", true, 80, 1, "none", 0),
+                    new Attacks("Water Shuriken", "Water", true, 80, 0.1, "none", 0),
                     new Attacks("Nasty Plot", "Dark", true, 80, 1, "none", 0),
                     new Attacks("Sludge Bomb", "Poison", true, 80, 1, "none", 0),
                 };
@@ -79,8 +84,13 @@ namespace Pokemon
                     new Attacks("Focus Punch", "Fighting", true, 80, 1, "none", 0),
                 };
 
-                Pokemon friendly = new Pokemon(70, "Greninja", new string[] { "Dark" }, 84, new int[] { 4, }, GreninjaMoves, 90, 90, 135, 90, 125, 0);
-                Pokemon enemy = new Pokemon(60, "Breloom", new string[] { "Grass", "Fighting" }, 84, new int[] { 4, }, BreloomMoves, 130, 80, 60, 60, 70, 0);
+                friendly = new Pokemon("Greninja", new string[] { "Dark" }, 84, new int[] { 252, 4, 252, 0, 0, 0 }, GreninjaMoves, 70, 90, 90, 135, 90, 125, 0);
+                enemy = new Pokemon("Breloom", new string[] { "Grass", "Fighting" }, 84, new int[] { 4, 252, 252, 0, 0, 0 }, BreloomMoves, 60, 130, 80, 60, 60, 70, 0);
+                
+                friendlyHp.Maximum = friendly.hp;
+                enemyHp.Maximum = enemy.hp;
+
+
                 update(friendly, enemy);
             } catch (Exception exc)
             {
@@ -90,7 +100,8 @@ namespace Pokemon
 
         private void attack1_Click(object sender, EventArgs e)
         {
-
+            friendly.Attack(friendly.Attacks[0], enemy);
+            update(friendly, enemy);
         }
     }
 }
