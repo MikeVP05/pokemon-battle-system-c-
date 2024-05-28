@@ -132,7 +132,6 @@
             this.enemyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.enemyPicture.TabIndex = 8;
             this.enemyPicture.TabStop = false;
-            this.enemyPicture.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // friendlyPicture
             // 
@@ -185,6 +184,7 @@
             this.attack2.TabIndex = 3;
             this.attack2.Text = "Fight";
             this.attack2.UseVisualStyleBackColor = true;
+            this.attack2.Click += new System.EventHandler(this.attack2_Click);
             // 
             // attack3
             // 
@@ -194,6 +194,7 @@
             this.attack3.TabIndex = 2;
             this.attack3.Text = "Fight";
             this.attack3.UseVisualStyleBackColor = true;
+            this.attack3.Click += new System.EventHandler(this.attack3_Click);
             // 
             // attack4
             // 
@@ -203,6 +204,7 @@
             this.attack4.TabIndex = 1;
             this.attack4.Text = "Fight";
             this.attack4.UseVisualStyleBackColor = true;
+            this.attack4.Click += new System.EventHandler(this.attack4_Click);
             // 
             // startButton
             // 

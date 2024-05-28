@@ -52,27 +52,23 @@ namespace Pokemon
             }
         }
 
-        public void Attack(Attacks attack, Pokemon enemy)
+        public void Attack(Attacks attack, Pokemon target)
         {
             Random random = new Random();
             if (random.Next(0, 101) >= attack.hitChance)
             {
-                enemy.hp -= attack.basePower;
-                if (attack.basePower >= enemy.hp)
+                target.hp -= attack.basePower;
+                if (attack.basePower >= target.hp)
                 {
-                    enemy.Faint(true);
+                    target.Faint();
                 }
             }
         }
 
-        public void Faint(bool enemy)
+        public void Faint()
         {
             this.fainted = true;
             this.hp = 0;
-            if (enemy)
-            {
-                pokemonForm.enemyPicture.Image = null;
-            }
         }
 
     }
